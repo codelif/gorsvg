@@ -3,10 +3,10 @@ package main
 import (
 	"image"
 	"image/png"
+  "image/color"
 	"os"
-
-	"github.com/codelif/pawbar/pkg/gorsvg"
-	"golang.org/x/image/colornames"
+  
+  "github.com/codelif/gorsvg"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 
 	var img image.Image
 	if len(os.Args) > 1 {
-		img, err = gorsvg.DecodeWithColor(f, 48, 48, colornames.Indigo)
+		img, err = gorsvg.DecodeWithColor(f, 48, 48, color.White)
 		if err != nil {
 			panic(err)
 		}
