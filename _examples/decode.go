@@ -1,12 +1,14 @@
+//go:build ignore
+//+build ignore
 package main
 
 import (
 	"image"
+	"image/color"
 	"image/png"
-  "image/color"
 	"os"
-  
-  "github.com/codelif/gorsvg"
+
+	"github.com/codelif/gorsvg"
 )
 
 func main() {
